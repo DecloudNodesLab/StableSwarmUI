@@ -1,9 +1,8 @@
 #!/bin/bash
 LINK_MODEL=$1
 MODEL_NAME=`basename $LINK_MODEL`
-rm /stable-diffusion-webui/models/Stable-diffusion/*
 if [[ -n "$HF_TOKEN" ]];then
-wget --header="Authorization: Bearer $HF_TOKEN" -O /stable-diffusion-webui/models/Stable-diffusion/$MODEL_NAME $LINK_MODEL
+wget --header="Authorization: Bearer $HF_TOKEN" -O /Models/$MODEL_NAME $LINK_MODEL
 exit
 fi
-wget -O /stable-diffusion-webui/models/Stable-diffusion/$MODEL_NAME $LINK_MODEL
+wget -O /Models//$MODEL_NAME $LINK_MODEL
