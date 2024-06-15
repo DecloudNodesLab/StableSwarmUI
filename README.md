@@ -1,14 +1,11 @@
 # StableSwarmUI
 
-**StableSwarmUI 0.6.4 Beta**.
+**Deploy StableSwarmUI 0.6.4 Beta on Akash Network**.
 
 A Modular Stable Diffusion Web-User-Interface, with an emphasis on making powertools easily accessible, high performance, and extensibility.
 
 ![ui-screenshot](.github/images/stableswarmui.jpg)
 
-Join the [Discord](https://discord.gg/q2y38cqjNw) to discuss the project, get support, see announcements, etc.
-
-Follow the [Feature Announcements Thread](https://github.com/Stability-AI/StableSwarmUI/discussions/11) for updates on new features.
 
 # Status
 
