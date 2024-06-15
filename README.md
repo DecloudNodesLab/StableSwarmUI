@@ -2,7 +2,14 @@
 
 **Deploy StableSwarmUI 0.6.4 Beta on Akash Network**.
 
-A Modular Stable Diffusion Web-User-Interface, with an emphasis on making powertools easily accessible, high performance, and extensibility.
+Just deploy `deploy.yml` file on **Akash Network** and enjoy **StableSwarmUI**!
+
+> If your need download private model huggingface - uncomment and set `MODEL_LINK` & `HF_TOKEN` variables.
+
+
+![Example](example.gif)
+
+A Modular **Stable Diffusion** Web-User-Interface, with an emphasis on making powertools easily accessible, high performance, and extensibility.
 
 ![ui-screenshot](.github/images/stableswarmui.jpg)
 
@@ -22,31 +29,6 @@ Key feature targets not yet implemented:
 - LLM-assisted prompting
 - convenient direct-distribution of Swarm as a program (Electron app?)
 
-# Try It On Google Colab or Runpod
-
-### Google Colab
-
-**WARNING**: Google Colab does not necessarily allow remote WebUIs, particularly for free accounts, use at your own risk.
-
-Colab link if you want to try Swarm: https://colab.research.google.com/github/Stability-AI/StableSwarmUI/blob/master/colab/colab-notebook.ipynb
-
-### Runpod
-
-Runpod template (note: maintained by third party contributor [nerdylive123](https://github.com/nerdylive123)): https://runpod.io/console/deploy?template=u7mlkrmxq3&ref=c6jd6jj0
-
-Note it may take several minutes to start up the first time. Check the container logs to see setup progress. Check the template `?` info for hint on how to use.
-
-# Running with Docker
-
-- To forward an Nvidia GPU, you must have the Nvidia Container Toolkit installed: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
-- Open a shell terminal and `cd` to a directory you want to install into
-- Run shell commands:
-    - `git clone https://github.com/Stability-AI/StableSwarmUI`
-    - cd `StableSwarmUI`
-    - `./launch-docker.sh`
-    - Open your browser to `localhost:7801`
-- Note that it will forward the `Models` and `Output` directory, and will mount `Data` and `dlbackend` as independent persistent volumes.
-
 # Documentation
 
 See [the documentation folder](/docs/README.md).
@@ -62,7 +44,6 @@ See [the motivations document](/docs/Motivations.md) for motivations on technica
 # Legal
 
 This project:
-- embeds a copy of [7-zip](https://7-zip.org/download.html) (LGPL).
 - has the ability to auto-install [ComfyUI](https://github.com/comfyanonymous/ComfyUI) (GPL).
 - has the option to use as a backend [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) (AGPL).
 - can automatically install [christophschuhmann/improved-aesthetic-predictor](https://github.com/christophschuhmann/improved-aesthetic-predictor) (Apache2).
